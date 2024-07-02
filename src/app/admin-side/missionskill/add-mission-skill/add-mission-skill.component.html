@@ -11,6 +11,7 @@
               <form [formGroup]="addMissionSkillForm">
                 <div class="row" style="padding: 3px 10px 3px 10px;">
                   <input type="hidden" formControlName="id">
+
                   
                   <div class="form-group">
                     <label class="col-form-label">Status</label>
@@ -20,6 +21,17 @@
                     </select>
                     <span class="text-danger" *ngIf="addMissionSkillForm.controls['status'].dirty && addMissionSkillForm.hasError('required','status')">
                       Status is required
+                    </span>
+                  </div>
+                  
+                  
+                </div>
+                <div class="row">
+                  <div class="form-group">
+                    <label class="col-form-label">Add Mission Skill</label>
+                    <input type="text" class="form-control" formControlName="skillName" placeholder="">
+                    <span class="text-danger"  >
+                      Please Enter Skill Name
                     </span>
                   </div>
                 </div>

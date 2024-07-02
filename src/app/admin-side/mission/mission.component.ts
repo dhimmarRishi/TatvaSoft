@@ -85,4 +85,9 @@ export class MissionComponent implements OnInit {
         }
       },err=>this.toast.error({detail:"ERROR",summary:err.message,duration:3000}));
   }
+
+  EditMissionData(){
+
+  }
+  
 }
